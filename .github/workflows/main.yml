@@ -1,0 +1,15 @@
+name: Schedule Job
+
+on:
+ schedule:
+  - cron: "0 0 * * *"
+jobs:
+ run-script:
+   runs-on: ubantu-latest
+
+   steps:
+     - name: print Messege
+       run: echo "Schedule Workflow Executed"
+       
+      
+      
